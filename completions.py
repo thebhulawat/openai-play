@@ -3,6 +3,7 @@ import json
 
 client = OpenAI() 
 
+
 def get_delivery_date(order_id: str) -> str:
     if order_id == "1": 
         return "13th Aug, 2024"
@@ -92,12 +93,12 @@ function_call_result_message = {
 messages.append(response.choices[0].message)
 messages.append(function_call_result_message)
 
-print(messages)
+#print(messages)
 
 response = client.chat.completions.create(
     model="gpt-4o-2024-08-06", 
     tools=tools, 
-    messages=messages
+    messages=messages,
 )
 
-print(response.choices[0].message)
+#print(response.choices[0].message)
