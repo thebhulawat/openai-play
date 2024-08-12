@@ -1,6 +1,5 @@
 from openai import OpenAI 
 from pydantic import BaseModel
-import json
 
 client = OpenAI() 
 
@@ -53,3 +52,4 @@ event: CalendarEvent = completions.choices[0].message.parsed
 print(event.date)
 print(event.participants)
 print(event.name)
+
