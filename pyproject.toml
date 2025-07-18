@@ -14,7 +14,7 @@ python-dotenv = "^1.0.1"
 cohere = "^5.8.0"
 pymongo = "^4.8.0"
 termcolor = "^2.4.0"
-pyautogen = "^0.2.34"
+ag2 = "^0.2.34"
 colorama = "^0.4.6"
 
 
